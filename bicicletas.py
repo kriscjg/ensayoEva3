@@ -52,3 +52,5 @@ while ejecutando:
         except ValueError:
             print("Error, debe ingresar un numero valido")
     elif opcion == 4:
+        print(f"\n[HISTORIAL] Actualmente hay {viajes_activos} bicicleta(s) en uso por los usuarios")
+
