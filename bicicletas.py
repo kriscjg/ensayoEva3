@@ -3,7 +3,6 @@ capacidad_maxima = 25
 bicis_disponibles = 25
 viajes_activos = 0
 ejecutando = True
-
 while ejecutando:
     print("\n=== MENÚ PRINCIPAL ===")
     print("1. Bicicletas disponibles")
@@ -16,7 +15,6 @@ while ejecutando:
     except ValueError:
         print("Opción no válida")
         continue
-
     if opcion == 1:
         print(f"\n[INFO] Cantidad actual de bicicletas disponibles: {bicis_disponibles}")
     elif opcion == 2:
@@ -54,3 +52,8 @@ while ejecutando:
     elif opcion == 4:
         print(f"\n[HISTORIAL] Actualmente hay {viajes_activos} bicicleta(s) en uso por los usuarios")
 
+    elif opcion == 5:
+        print("Gracias por utilizar nuestro software, hasta la próxima.")
+        ejecutando = False
+    else:
+        print("Opción invalida")
